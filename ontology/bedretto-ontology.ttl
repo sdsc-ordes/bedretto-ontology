@@ -147,10 +147,12 @@ bed:elevationReference a rdf:Property ;
     skos:definition "also known as datum. It is an absolute reference such as the sea level or ground level".
 bed:groundLevelRelativeToDatum a rdf:Property ;
     skos:prefLabel "Ground level relative to datum" ;
-    skos:definition "This is the distance from the sea level to the elevation of the location where the borehole is located".
+    skos:definition "This is the distance from the sea level to the elevation of the location where the borehole is located"
+    .
 bed:boreholeGeometry a rdf:Property ;
     skos:prefLabel "Borehole Geometry" ;
-    skos:definition "The downhole geometry of the borehole".
+    skos:definition "The downhole geometry of the borehole"
+    .
 bed:boreholeDip a rdf:Property ;
     skos:prefLabel "Borehole Dip" ;
     skos:definition "Also Borehole inclination. " ;
@@ -158,7 +160,8 @@ bed:boreholeDip a rdf:Property ;
     .
 bed:boreholeAzimuth  a rdf:Property ;
     skos:prefLabel "Borehole azimuth " ;
-    skos:definition "".
+    skos:definition ""
+    .
 bed:drillStyle a rdf:Property ;
     skos:prefLabel "Drill style" ;
     skos:definition "method used to drill hole" ;
