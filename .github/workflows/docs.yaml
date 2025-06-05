@@ -24,7 +24,7 @@ jobs:
       - name: Enrich ontology with rdflib
         id: enrich
         run: |
-          python tools/python/docs/sparql.py > enriched.ttl
+          python tools/python/docs/sparql.py
           echo "enriched_file=/tmp/enriched.ttl" >> $GITHUB_ENV
           
 
