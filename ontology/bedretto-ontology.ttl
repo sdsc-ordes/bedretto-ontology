@@ -178,7 +178,8 @@ bed:drillEnd a rdf:Property ;
     skos:definition "The date of the end of drilling formatted according to ISO8601 (e.g., 2012-03-28). ".
 bed:coreSectionStart a rdf:Property ;
     skos:prefLabel "Core Section Start" ;
-    skos:definition "Section in depth along the borehole at which rock core starts".
+    skos:definition "Section in depth along the borehole at which rock core starts"
+    .
 bed:coreSectionEnd a rdf:Property ;
     skos:prefLabel "Core Section End" ;
     skos:definition "Section in depth along the borehole at which rock cores ends".
