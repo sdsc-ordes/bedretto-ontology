@@ -4,8 +4,6 @@ prefix skos: <http://www.w3.org/2004/02/skos/core#>
 prefix sh: <http://www.w3.org/ns/shacl#> 
 prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
-
-@prefix bed: <http://bedretto.org/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix adms: <http://www.w3.org/ns/adms#> .
@@ -18,11 +16,10 @@ bed: a owl:Ontology ;
     dcterms:abstract "An ontology for describing boreholes, core samples, sensors, and related geological data at the Bedretto Underground Laboratory for Geosciences and Geoenergies." ;
     dcterms:description "This ontology provides classes and properties for representing boreholes, borehole logs, core samples, sensors, and related metadata for geoscientific research. It is designed to support data integration, sharing, and documentation for the Bedretto project." ;
     adms:versionNotes "Initial version. Please update with release notes as needed." ;
-    dcterms:modified "2024-06-01T00:00:00Z"^^xsd:dateTime ;
-    dcterms:created "2024-05-01T00:00:00Z"^^xsd:dateTime ;
+    dcterms:modified "2024-06-05"^^xsd:date ;
+    dcterms:created "2024-05-01"^^xsd:date ;
     dcterms:creator "Bedretto Lab" ;
-    dcterms:dateCopyrighted "2024-01-01T00:00:00Z"^^xsd:dateTime ;
-    dcterms:issued "2024-06-01T00:00:00Z"^^xsd:dateTime ;
+    dcterms:issued "2024-06-01"^^xsd:date ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:publisher "ETH Zurich" ;
     dcterms:rightsHolder "ETH Zurich" ;
