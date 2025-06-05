@@ -13,6 +13,7 @@ prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 bed: a owl:Ontology ;
     dcterms:title "Bedretto Ontology" ;
+    dcterms:author "Liliana Vargas" , "Robin Franken" ;
     dcterms:abstract "An ontology for describing boreholes, core samples, sensors, and related geological data at the Bedretto Underground Laboratory for Geosciences and Geoenergies." ;
     dcterms:description "This ontology provides classes and properties for representing boreholes, borehole logs, core samples, sensors, and related metadata for geoscientific research. It is designed to support data integration, sharing, and documentation for the Bedretto project." ;
     adms:versionNotes "Initial version. Please update with release notes as needed." ;
