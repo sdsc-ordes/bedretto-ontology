@@ -185,7 +185,8 @@ bed:coreSectionEnd a rdf:Property ;
     skos:definition "Section in depth along the borehole at which rock cores ends".
 bed:coreSectionLength a rdf:Property ;
     skos:prefLabel "Core Section Length" ;
-    skos:definition "Length computed from the beginning and end of the coring ".
+    skos:definition "Length computed from the beginning and end of the coring "
+    .
 bed:drillingReport a rdf:Property ;
     skos:prefLabel "Drilling Report" ;
     skos:definition "Technical report issued by the drilling company with detailed information about the drilling".
