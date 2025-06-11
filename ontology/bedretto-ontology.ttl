@@ -33,28 +33,48 @@ bed: a owl:Ontology ;
 bed:Borehole a rdfs:Class, sh:NodeShape ;
 	skos:prefLabel "Borehole" ;
 	skos:definition  "A borehole is the generalized term for any narrow shaft drilled in the ground" ;
-    sh:property [sh:path bed:identifier ; sh:datatype xsd:anyURI ;  ] ;
-    sh:property [sh:path bed:boreholeName ; sh:datatype xsd:string ;  ] ;
-    sh:property [sh:path bed:boreholePurpose ; sh:datatype xsd:string ;  ] ;
-    sh:property [sh:path bed:boreholeType ; sh:datatype xsd:string ;  ] ;
-    sh:property [sh:path bed:boreholeStatus ; sh:datatype xsd:string ;  ] ;
-    sh:property [sh:path bed:boreholeLength ; sh:datatype xsd:decimal ;  ] ;
-    sh:property [sh:path bed:coordinateSystem ; sh:datatype xsd:string ;  ] ;
-    sh:property [sh:path bed:boreholeMouthCoordinate ; sh:datatype xsd:string ;  ] ;
-    sh:property [sh:path bed:elevation ; sh:datatype xsd:decimal ;  ] ;
-    sh:property [sh:path bed:elevationReference ; sh:datatype xsd:string ;  ] ;
-    sh:property [sh:path bed:groundLevelRelativeToDatum ; sh:datatype xsd:decimal ;  ] ;
-    sh:property [sh:path bed:boreholeGeometry ; sh:datatype xsd:string ;  ] ;
-    sh:property [sh:path bed:boreholeDip ; sh:datatype xsd:string ;  ] ;
-    sh:property [sh:path bed:boreholeAzimuth ; sh:datatype xsd:string ;  ] ;
-    sh:property [sh:path bed:drillStyle ; sh:datatype xsd:string ;  ] ;
-    sh:property [sh:path bed:boreholeDiameter ; sh:datatype xsd:decimal ;  ] ;
+    sh:property [sh:path bed:identifier ; sh:minCount 1 ; sh:in ("Uniform Resource Identifier (URI)" "Borehole Code" "International Generic Sample Number (IGSN)")  ] ;
+    sh:property [sh:path bed:code ; sh:minCount 1 ;  sh:datatype xsd:string ;  ] ;
+    sh:property [sh:path bed:name ; sh:minCount 1 ;  sh:datatype xsd:string ;  ] ;
+    sh:property [sh:path bed:generalPurpose ; sh:minCount 1 ;  sh:datatype xsd:string ; sh:in ("site investigation" "decontamination" "disposal" "geotechnical" "mineral" "monitoring" "oil" "groundwater" "geothermal") ] ;
+    sh:property [sh:path bed:specificPurpose; sh:datatype xsd:string ;  ] ;
+    sh:property [sh:path bed:type ; sh:minCount 1 ;  sh:datatype xsd:string ; sh:in ("extraction" "producer" "estimulation" "injector" "monitoring") ] ;
+    sh:property [sh:path bed:status ; sh:minCount 1 ;  sh:datatype xsd:string ; sh:in ("in use" "decommissioned" "collapsed" "abandoned") ] ;
+    sh:property [sh:path bed:totalLength ; sh:datatype xsd:float ;  ] ;
+    sh:property [sh:path bed:lengthType; sh:minCount 1 ; sh:datatype xsd:string ;  ] ; #suggestion: Length type belongs to totalLength - so objectify property
+    sh:property [sh:path bed:geometry; sh:minCount 1 ; sh:in ("vertical" "horizontal" "inclined") ;  ] ;
+    sh:property [sh:path bed:drillStyle ; sh:datatype xsd:string ; sh:in ("hammer" "cored" "rotational") ;  ] ;
     sh:property [sh:path bed:drillingStart ; sh:datatype xsd:date ;  ] ;
     sh:property [sh:path bed:drillEnd ; sh:datatype xsd:date ;  ] ;
+    sh:property [sh:path bed:boreholeDiameter ; sh:datatype xsd:decimal ;  ] ;
     sh:property [sh:path bed:coreSectionStart ; sh:datatype xsd:decimal  ] ;
     sh:property [sh:path bed:coreSectionEnd ; sh:datatype xsd:decimal  ] ;
     sh:property [sh:path bed:coreSectionLength ; sh:datatype xsd:decimal  ] ;
     sh:property [sh:path bed:drillingReport ; sh:datatype xsd:anyURI  ] ;
+    sh:property [sh:path bed:description; sh:datatype xsd:string ;  ] ;
+    sh:property [sh:path bed:hasLocation ; sh:class bed:Location ;  ] ;
+    sh:property [sh:path bed:hasBoreholeLog ; sh:class bed:BoreholeLog ;  ] ;
+    sh:property [sh:path bed:hasCore ; sh:class bed:Core ;  ] ;
+.
+
+bed:Location a rdfs:Class, sh:NodeShape ;
+    skos:prefLabel "Location" ;
+    skos:definition "Precise location of a borehole's surface position defined by easting and northing coordinates. " ;
+    sh:property [sh:path bed:coordinateType ; sh:datatype xsd:string ; sh:in ("Planned" "Staked out" "Surveyed") ;  ] ;
+    sh:property [sh:path bed:easting; sh:datatype xsd:float ;  ] ;
+    sh:property [sh:path bed:northing; sh:datatype xsd:float ;  ] ;
+    sh:property [sh:path bed:elevation ; sh:datatype xsd:float ;  ] ;
+    sh:property [sh:path bed:datumElevationReference ; sh:datatype xsd:string ;  ] ;
+    sh:property [sh:path bed:groundLevel ; sh:datatype xsd:float ;  ] ;
+    sh:property [sh:path bed:coordinateSystem ; sh:datatype xsd:string ; sh:in ("UTM (Universal Transverse Mercator)" "Geographic Coordinates (Latitude & Longitude)") ] ;
+    sh:property [sh:path bed:dip ; sh:datatype xsd:float ;  ] ;
+    sh:property [sh:path bed:dipDirection ; sh:datatype xsd:string ; sh:in ("upward" "downward") ] ;   #here too, objectify property, dip and dip-direction are related 
+    sh:property [sh:path bed:azimuth ; sh:datatype xsd:float ;  ] ;
+    sh:property [sh:path bed:longitude; sh:datatype xsd:float ;  ] ;
+    sh:property [sh:path bed:latitude; sh:datatype xsd:float ;  ] ;
+    sh:property [sh:path bed:description; sh:datatype xsd:string ;  ] ;
+    sh:property [sh:path bed:tunnelMeter; sh:datatype xsd:int ;  ] ;
+    sh:property [sh:path bed:tunnelSection ; sh:datatype xsd:string ;  ] ;
 .
 	
 bed:BoreholeLog a rdfs:Class, sh:NodeShape ;
@@ -71,13 +91,45 @@ bed:BoreholeLog a rdfs:Class, sh:NodeShape ;
 bed:Core a rdfs:Class, sh:NodeShape ;
 	skos:prefLabel "Core" ;
 	skos:definition  "A core run is defined by the drilling that happens during the time in which one core barrel is in the borehole. It starts when drilling succeeds with the empty core barrel and ends when the core barrel is full or has to be retrieved from the borehole for other reasons. The entire drill core retrieved from a borehole is the sum of drill core from all core runs in this borehole. It is also called the sampling material. IODP/ICDP naming example: 5054-1-A-178Z (Expedition number-Drill site number-Borehole character-Core run number and coring type designation)" ;
+    # sh:property [sh:path bed:coreId ; sh:datatype xsd:string ;  ] ; #probably not needed, as core is related to geology with hasGeology, not through a primary-foreign key
+    sh:property [sh:path bed:originLab ; sh:datatype xsd:string ;  ] ;
+    sh:property [sh:path bed:campaign ; sh:datatype xsd:string ;  ] ;
     sh:property [sh:path bed:coreRun ; sh:datatype xsd:string ;  ] ;
     sh:property [sh:path bed:topDepth ; sh:datatype xsd:decimal ;  ] ;
     sh:property [sh:path bed:bottomDepth ; sh:datatype xsd:decimal ;  ] ;
-    sh:property [sh:path bed:fabric ; sh:datatype xsd:string  ] ;
-    sh:property [sh:path bed:rockClassification ; sh:datatype xsd:string  ] ;
-    .
+    sh:property [sh:path bed:depthReference ; sh:datatype xsd:string ; sh:in ("measured depth" "vertical depth") ] ;
+    sh:property [sh:path bed:length ; sh:datatype xsd:float ;  ] ;
+    sh:property [sh:path bed:diameter ; sh:datatype xsd:float ;  ] ;
+    sh:property [sh:path bed:weight;  ] ;
+    sh:property [sh:path bed:chargeNumber ;  ] ;
+    sh:property [sh:path bed:repository ; sh:datatype xsd:string ;  ] ;
+    sh:property [sh:path bed:repositoryLocation; sh:datatype xsd:string ;  ] ;
+    sh:property [sh:path bed:coreScan ; sh:datatype xsd:boolean ;] ;
+    sh:property [sh:path bed:method ; sh:datatype xsd:string ; sh:in ("multi-sensor core logger (MSCL)" "X-ray fluorescence)") ;] ;
+    sh:property [sh:path bed:hasCoreSample ; sh:class bed:CoreSample ;  ] ;
+    sh:property [sh:path bed:hasGeology ; sh:class bed:Geology] ;
+.
 
+bed:Geology a rdfs:Class, sh:NodeShape ;
+    skos:prefLabel "Geology" ;
+    skos:definition "A geological description of the core, including rock classification and fabric." ;
+    sh:property [sh:path bed:fabric ; sh:datatype xsd:string ;  ] ;
+    sh:property [sh:path bed:rockClassification ; sh:datatype xsd:string ;  ] ;
+    sh:property [sh:path bed:description; sh:datatype xsd:string ;  ] ;
+    sh:property [sh:path bed:rockType ; sh:datatype xsd:string ;  ] ;
+    sh:property [sh:path bed:description ; sh:datatype xsd:string ;  ] ;
+    sh:property [sh:path bed:color ; sh:datatype xsd:string ;  ] ;
+    sh:property [sh:path bed:minerals ; sh:datatype xsd:string ;  ] ;
+    sh:property [sh:path bed:grainSize ; sh:datatype xsd:string ;  ] ;
+    sh:property [sh:path bed:texture ; sh:datatype xsd:string ;  ] ;
+    sh:property [sh:path bed:foliation ; sh:datatype xsd:string ;  ] ;
+    sh:property [sh:path bed:disturbance ; sh:datatype xsd:string ;  ] ;
+    sh:property [sh:path bed:discontinuity ; sh:datatype xsd:string ;  ] ;
+    sh:property [sh:path bed:litholog ; sh:datatype xsd:boolean ;  ] ;
+    sh:property [sh:path bed:geologicalAge ; sh:datatype xsd:string ;  ] ;
+    sh:property [sh:path bed:geologicalUnit ; sh:datatype xsd:string ;  ] ;
+    .
+    
 bed:CoreSample a rdfs:Class, sh:NodeShape ;
 	skos:prefLabel "Core sample" ;
 	skos:definition "A core sample is a cylindrical section of rock, soil, or other material that is extracted from the ground using a drilling process. It is typically used for geological, environmental, or engineering studies to analyze the composition and properties of subsurface materials." ;
@@ -108,26 +160,26 @@ bed:identifier a rdf:Property ;
     skos:definition "URI, code, IGSN, unique identifier"
     .
 bed:boreholeName a rdf:Property ;
-    skos:prefLabel "Borehole Name" ;
-    skos:definition "Borehole name usually follow a convention by each operator"
+    skos:prefLabel "Name" ;
+    skos:definition "Name usually follow a convention by each operator"
     .
-bed:boreholePurpose a rdf:Property ;
-    skos:prefLabel "Borehole Purpose" ;
+bed:generalPurpose a rdf:Property ;
+    skos:prefLabel "General Purpose" ;
     skos:definition "Purposes for which a borehole was drilled" ;
     skos:example "site investigation, decontamination, disposal, Geotechnical, Mineral, MonitoringlevelHead, MonitoringQuality, Oil, OilExploratory, Seismic, WaterExploratory, etc." ;
     .
-bed:boreholeType a rdf:Property ;
-    skos:prefLabel "Borehole Type" ;
+bed:type a rdf:Property ;
+    skos:prefLabel "Type" ;
     skos:definition "Specific purpose of the borehole" ;
     skos:example "extraction, production, injection, estimulation, observation, monitoring" ;
     .
-bed:boreholeStatus a rdf:Property ;
-    skos:prefLabel "Borehole Status" ;
+bed:status a rdf:Property ;
+    skos:prefLabel "Status" ;
     skos:definition "Current status of the borehole" ;
     skos:example "in use, functioning, decommissioned, collapsed, abandoned" ;
     .
-bed:boreholeLength a rdf:Property ;
-    skos:prefLabel "Borehole Length" ;
+bed:totalLength a rdf:Property ;
+    skos:prefLabel "Total Length" ;
     skos:definition "The distance along a borehole." ;
     skos:example "This will be determined by the data provider (ie, 'length' can have different sources, like drillers measurement, loggers measurement, survey)" ;
     .
@@ -145,7 +197,7 @@ bed:elevation a rdf:Property ;
 bed:elevationReference a rdf:Property ;
     skos:prefLabel "Elevation Reference" ;
     skos:definition "also known as datum. It is an absolute reference such as the sea level or ground level".
-bed:groundLevelRelativeToDatum a rdf:Property ;
+bed:datumElevationReference a rdf:Property ;
     skos:prefLabel "Ground level relative to datum" ;
     skos:definition "This is the distance from the sea level to the elevation of the location where the borehole is located"
     .
@@ -153,13 +205,13 @@ bed:boreholeGeometry a rdf:Property ;
     skos:prefLabel "Borehole Geometry" ;
     skos:definition "The downhole geometry of the borehole"
     .
-bed:boreholeDip a rdf:Property ;
+bed:dip a rdf:Property ;
     skos:prefLabel "Borehole Dip" ;
     skos:definition "Also Borehole inclination. " ;
     skos:example "Upward, downward" ;
     .
-bed:boreholeAzimuth  a rdf:Property ;
-    skos:prefLabel "Borehole azimuth " ;
+bed:azimuth  a rdf:Property ;
+    skos:prefLabel "azimuth " ;
     skos:definition ""
     .
 bed:drillStyle a rdf:Property ;
