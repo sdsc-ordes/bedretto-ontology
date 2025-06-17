@@ -87,10 +87,10 @@ bed:Borehole a rdfs:Class, sh:NodeShape ;
   sh:property [sh:path bed:drillStyle ; sh:datatype xsd:string ; sh:in ("hammer" "cored" "rotational") ; ] ;
   sh:property [sh:path bed:drillingStart ; sh:datatype xsd:date ; ] ;
   sh:property [sh:path bed:drillEnd ; sh:datatype xsd:date ; ] ;
-  sh:property [sh:path bed:boreholeDiameter ; sh:datatype xsd:decimal ; ] ;
-  sh:property [sh:path bed:coreSectionStart ; sh:datatype xsd:decimal ] ;
-  sh:property [sh:path bed:coreSectionEnd ; sh:datatype xsd:decimal ] ;
-  sh:property [sh:path bed:coreSectionLength ; sh:datatype xsd:decimal ] ;
+  sh:property [sh:path bed:boreholeDiameter ; sh:datatype xsd:float ; ] ;
+  sh:property [sh:path bed:coreSectionStart ; sh:datatype xsd:float ] ;
+  sh:property [sh:path bed:coreSectionEnd ; sh:datatype xsd:float ] ;
+  sh:property [sh:path bed:coreSectionLength ; sh:datatype xsd:float ] ;
   sh:property [sh:path bed:drillingReport ; sh:datatype xsd:anyURI ] ;
   sh:property [sh:path bed:description; sh:datatype xsd:string ; ] ;
   sh:property [sh:path bed:hasLocation ; sh:class bed:Location ; sh:minCount 1 ; ] ;
@@ -136,8 +136,8 @@ sh:property [sh:path bed:coreId ; sh:datatype xsd:string ; sh:minCount 1 ; ] ;
 sh:property [sh:path bed:originLab ; sh:datatype xsd:string ;  ] ;
 sh:property [sh:path bed:campaign ; sh:datatype xsd:string ;  ] ;
 sh:property [sh:path bed:coreRun ; sh:datatype xsd:string ; sh:minCount 1 ; ] ;
-sh:property [sh:path bed:topDepth ; sh:datatype xsd:decimal ; sh:minCount 1 ; ] ;
-sh:property [sh:path bed:bottomDepth ; sh:datatype xsd:decimal ; sh:minCount 1 ; ] ;
+sh:property [sh:path bed:topDepth ; sh:datatype xsd:float ; sh:minCount 1 ; ] ;
+sh:property [sh:path bed:bottomDepth ; sh:datatype xsd:float ; sh:minCount 1 ; ] ;
 sh:property [sh:path bed:depthReference ; sh:datatype xsd:string ; sh:minCount 1 ; sh:in ("measured depth" "vertical depth") ] ;
 sh:property [sh:path bed:length ; sh:datatype xsd:float ; sh:minCount 1 ; ] ;
 sh:property [sh:path bed:diameter ; sh:datatype xsd:float ; sh:minCount 1 ; ] ;
@@ -621,12 +621,12 @@ bed:dipDirection a rdf:Property ;
 
 bed:longitude a rdf:Property ;
     skos:prefLabel "Longitude" ;
-    skos:definition "Longitude coordinate in decimal degrees." ;
+    skos:definition "Longitude coordinate in float degrees." ;
 .
 
 bed:latitude a rdf:Property ;
     skos:prefLabel "Latitude" ;
-    skos:definition "Latitude coordinate in decimal degrees." ;
+    skos:definition "Latitude coordinate in float degrees." ;
 .
 
 bed:tunnelMeter a rdf:Property ;
