@@ -279,13 +279,13 @@
         "name": "Bedretto Lab"
     }],
     "@context": "https://schema.org",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "url": "http://bedretto.org/ontology#"
 }</script></head>
    <body>
       <div class="sp_container_principal container pt-4">
          <h1 class="mb-4 sp_section_title_header">Bedretto Ontology</h1>
-         <div><b>Creation date: </b>2024-05-01<br><b>Issue date: </b>2024-06-01<br><b>Last updated: </b>2024-06-05<br><b>Version: </b>0.0.1<br><b>License: </b><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">https://creativecommons.org/licenses/by/4.0/</a><br><b>Creator: </b>Bedretto Lab<br><b>Publisher: </b>ETH Zurich<br><b>Rightsholder: </b>ETH Zurich<br><b>Feedback: </b><a href="https://github.com/bedretto/bedretto-ontology" target="_blank">https://github.com/bedretto/bedretto-ontology</a><br><br></div>
+         <div><b>Creation date: </b>2024-05-01<br><b>Issue date: </b>2024-06-01<br><b>Last updated: </b>2024-06-18<br><b>Version: </b>0.0.2<br><b>License: </b><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">https://creativecommons.org/licenses/by/4.0/</a><br><b>Creator: </b>Bedretto Lab<br><b>Publisher: </b>ETH Zurich<br><b>Rightsholder: </b>ETH Zurich<br><b>Feedback: </b><a href="https://github.com/bedretto/bedretto-ontology" target="_blank">https://github.com/bedretto/bedretto-ontology</a><br><br></div>
          <div class="row mt-3">
             <div class="col">
                <h2 id="abstract" class="sp_section_subtitle">Abstract</h2><p>An ontology for describing boreholes, core samples, sensors, and related geological data at the Bedretto Underground Laboratory for Geosciences and Geoenergies.</p>
@@ -295,6 +295,7 @@
             <h2 id="index">Table of Contents</h2>
             <ul role="list" class="sp_list_toc ul_type_none t-x-mode">
                <li><a href="#prefixes">Namespaces</a></li>
+               <li><a href="#diagrams">Diagrams</a></li>
                <li><a href="#description">Description</a></li>
                <li><a href="#documentation">Model documentation</a><ul role="list" class="ul_type_none sp_list_toc_l2">
                      <li><a href="#bed:Borehole">Borehole</a></li>
@@ -341,7 +342,172 @@
                   </table>
                </section>
             </div>
-         </div><br><div>
+         </div><br><div class="sp_section_row mt-3">
+            <div class="sp_section_col">
+               <section>
+                  <h2 id="diagrams" class="sp_section_subtitle">Diagrams</h2>
+                  <div><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1053px" preserveAspectRatio="none" style="width:973px;height:1053px;background:#FFFFFF;" version="1.1" viewBox="0 0 973 1053" width="973px" zoomAndPan="magnify"><defs xmlns=""/><g><!--class bed:BoreholeLog--><a href="#bed:BoreholeLog" target="_top" title="#bed:BoreholeLog" xlink:actuate="onRequest" xlink:href="#bed:BoreholeLog" xlink:show="new" xlink:title="#bed:BoreholeLog" xlink:type="simple"><g id="elem_bed:BoreholeLog"><rect codeLine="8" fill="#F1F1F1" height="83.1875" id="uml_bed:BoreholeLog" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="242" x="724.5" y="526"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="785.5" y="543.9951">bed:BoreholeLog</text><line style="stroke:#181818;stroke-width:0.5;" x1="725.5" x2="965.5" y1="552.2969" y2="552.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="230" x="730.5" y="569.292">bed:loggingDirection  : xsd:string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="196" x="730.5" y="585.5889">bed:loggingRun  : xsd:string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="198" x="730.5" y="601.8857">bed:loggingTool  : xsd:string</text></g></a><!--class bed:Location--><a href="#bed:Location" target="_top" title="#bed:Location" xlink:actuate="onRequest" xlink:href="#bed:Location" xlink:show="new" xlink:title="#bed:Location" xlink:type="simple"><g id="elem_bed:Location"><rect codeLine="12" fill="#F1F1F1" height="278.75" id="uml_bed:Location" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="349" x="7" y="428"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="136.5" y="445.9951">bed:Location</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="355" y1="454.2969" y2="454.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="204" x="13" y="471.292">bed:azimuth  : xsd:float  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="284" x="13" y="487.5889">bed:coordinateSystem  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="267" x="13" y="503.8857">bed:coordinateType  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="337" x="13" y="520.1826">bed:datumElevationReference  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="194" x="13" y="536.4795">bed:description  : xsd:string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="170" x="13" y="552.7764">bed:dip  : xsd:float  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="242" x="13" y="569.0732">bed:dipDirection  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="200" x="13" y="585.3701">bed:easting  : xsd:float  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="211" x="13" y="601.667">bed:elevation  : xsd:float  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="234" x="13" y="617.9639">bed:groundLevel  : xsd:float  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="158" x="13" y="634.2607">bed:latitude  : xsd:float</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="172" x="13" y="650.5576">bed:longitude  : xsd:float</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="207" x="13" y="666.8545">bed:northing  : xsd:float  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="179" x="13" y="683.1514">bed:tunnelMeter  : xsd:int</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="213" x="13" y="699.4482">bed:tunnelSection  : xsd:string</text></g></a><!--class bed:Geology--><a href="#bed:Geology" target="_top" title="#bed:Geology" xlink:actuate="onRequest" xlink:href="#bed:Geology" xlink:show="new" xlink:title="#bed:Geology" xlink:type="simple"><g id="elem_bed:Geology"><rect codeLine="28" fill="#F1F1F1" height="262.4531" id="uml_bed:Geology" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="290" x="227.5" y="784"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="89" x="328" y="801.9951">bed:Geology</text><line style="stroke:#181818;stroke-width:0.5;" x1="228.5" x2="516.5" y1="810.2969" y2="810.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="193" x="233.5" y="827.292">bed:color  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="202" x="233.5" y="843.5889">bed:coreId  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="236" x="233.5" y="859.8857">bed:description  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="204" x="233.5" y="876.1826">bed:discontinuity  : xsd:string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="199" x="233.5" y="892.4795">bed:disturbance  : xsd:string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="170" x="233.5" y="908.7764">bed:foliation  : xsd:string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="256" x="233.5" y="925.0732">bed:geologicalAge  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="256" x="233.5" y="941.3701">bed:geologicalUnit  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="180" x="233.5" y="957.667">bed:grainSize  : xsd:string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="226" x="233.5" y="973.9639">bed:litholog  : xsd:boolean  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175" x="233.5" y="990.2607">bed:minerals  : xsd:string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="278" x="233.5" y="1006.5576">bed:rockClassification  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="223" x="233.5" y="1022.8545">bed:rockType  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="166" x="233.5" y="1039.1514">bed:texture  : xsd:string</text></g></a><!--class bed:Borehole--><a href="#bed:Borehole" target="_top" title="#bed:Borehole" xlink:actuate="onRequest" xlink:href="#bed:Borehole" xlink:show="new" xlink:title="#bed:Borehole" xlink:type="simple"><g id="elem_bed:Borehole"><rect codeLine="43" fill="#F1F1F1" height="343.9375" id="uml_bed:Borehole" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="281" x="400" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="95" x="493" y="24.9951">bed:Borehole</text><line style="stroke:#181818;stroke-width:0.5;" x1="401" x2="680" y1="33.2969" y2="33.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="232" x="406" y="50.292">bed:boreholeDiameter  : xsd:float</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="194" x="406" y="66.5889">bed:code  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="217" x="406" y="82.8857">bed:coreSectionEnd  : xsd:float</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="238" x="406" y="99.1826">bed:coreSectionLength  : xsd:float</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="222" x="406" y="115.4795">bed:coreSectionStart  : xsd:float</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="194" x="406" y="131.7764">bed:description  : xsd:string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="406" y="148.0732">bed:drillEnd  : xsd:date</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="173" x="406" y="164.3701">bed:drillStyle  : xsd:string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="216" x="406" y="180.667">bed:drillingReport  : xsd:anyURI</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="185" x="406" y="196.9639">bed:drillingStart  : xsd:date</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="269" x="406" y="213.2607">bed:generalPurpose  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="140" x="406" y="229.5576">bed:geometry  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="406" y="245.8545">bed:identifier  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="237" x="406" y="262.1514">bed:lengthType  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="198" x="406" y="278.4482">bed:name  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="227" x="406" y="294.7451">bed:specificPurpose  : xsd:string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="202" x="406" y="311.042">bed:status  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="185" x="406" y="327.3389">bed:totalLength  : xsd:float</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="189" x="406" y="343.6357">bed:type  : xsd:string  [1..*]</text></g></a><!--class bed:Core--><a href="#bed:Core" target="_top" title="#bed:Core" xlink:actuate="onRequest" xlink:href="#bed:Core" xlink:show="new" xlink:title="#bed:Core" xlink:type="simple"><g id="elem_bed:Core"><rect codeLine="121" fill="#F1F1F1" height="278.75" id="uml_bed:Core" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="298" x="391.5" y="428"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="508" y="445.9951">bed:Core</text><line style="stroke:#181818;stroke-width:0.5;" x1="392.5" x2="688.5" y1="454.2969" y2="454.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="242" x="397.5" y="471.292">bed:bottomDepth  : xsd:float  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="184" x="397.5" y="487.5889">bed:campaign  : xsd:string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135" x="397.5" y="503.8857">bed:chargeNumber</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="202" x="397.5" y="520.1826">bed:coreId  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="218" x="397.5" y="536.4795">bed:coreRun  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="199" x="397.5" y="552.7764">bed:coreScan  : xsd:boolean</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="272" x="397.5" y="569.0732">bed:depthReference  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="210" x="397.5" y="585.3701">bed:diameter  : xsd:float  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="193" x="397.5" y="601.667">bed:length  : xsd:float  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="171" x="397.5" y="617.9639">bed:method  : xsd:string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="179" x="397.5" y="634.2607">bed:originLab  : xsd:string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="228" x="397.5" y="650.5576">bed:repository  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="286" x="397.5" y="666.8545">bed:repositoryLocation  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="215" x="397.5" y="683.1514">bed:topDepth  : xsd:float  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="397.5" y="699.4482">bed:weight</text></g></a><!--class bed:CoreSample--><a href="#bed:CoreSample" target="_top" title="#bed:CoreSample" xlink:actuate="onRequest" xlink:href="#bed:CoreSample" xlink:show="new" xlink:title="#bed:CoreSample" xlink:type="simple"><g id="elem_bed:CoreSample"><rect codeLine="66" fill="#F1F1F1" height="197.2656" id="uml_bed:CoreSample" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="311" x="553" y="816.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="650.5" y="834.4951">bed:CoreSample</text><line style="stroke:#181818;stroke-width:0.5;" x1="554" x2="863" y1="842.7969" y2="842.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="194" x="559" y="859.792">bed:description  : xsd:string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="239" x="559" y="876.0889">bed:dimensions  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="171" x="559" y="892.3857">bed:method  : xsd:string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175" x="559" y="908.6826">bed:property  : xsd:string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="217" x="559" y="924.9795">bed:purpose  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="299" x="559" y="941.2764">bed:requesterLaboratory  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="242" x="559" y="957.5732">bed:sampleDepth  : xsd:float  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="264" x="559" y="973.8701">bed:sampleNumber  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="246" x="559" y="990.167">bed:samplingDate  : xsd:date  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="227" x="559" y="1006.4639">bed:subsampleType  : xsd:string</text></g></a><!--class bed:TestBed--><a href="#bed:TestBed" target="_top" title="#bed:TestBed" xlink:actuate="onRequest" xlink:href="#bed:TestBed" xlink:show="new" xlink:title="#bed:TestBed" xlink:type="simple"><g id="elem_bed:TestBed"><rect codeLine="144" fill="#F1F1F1" height="99.4844" id="uml_bed:TestBed" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="249" x="57" y="129.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="91" x="136" y="147.4951">bed:TestBed</text><line style="stroke:#181818;stroke-width:0.5;" x1="58" x2="305" y1="155.7969" y2="155.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="219" x="63" y="172.792">bed:category  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="229" x="63" y="189.0889">bed:longName  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="237" x="63" y="205.3857">bed:shortName  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="189" x="63" y="221.6826">bed:type  : xsd:string  [1..*]</text></g></a><!--link bed:Borehole to bed:BoreholeLog--><g id="link_bed:Borehole_bed:BoreholeLog"><path codeLine="63" d="M675.61,351.21 C726.6,415.83 776.4925,479.0604 809.5425,520.9304 " fill="none" id="bed:Borehole-to-bed:BoreholeLog" style="stroke:#800000;stroke-width:1.0;"/><polygon fill="#800000" points="813.26,525.64,810.8235,516.0973,810.1621,521.7153,804.544,521.054,813.26,525.64" style="stroke:#800000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="131" x="711.5" y="394.0669">bed:hasBoreholeLog</text></g><!--link bed:Borehole to bed:Location--><g id="link_bed:Borehole_bed:Location"><path codeLine="64" d="M399.9,331.37 C370.42,363.11 343.5537,392.0341 314.5137,423.2941 " fill="none" id="bed:Borehole-to-bed:Location" style="stroke:#800000;stroke-width:1.0;"/><polygon fill="#800000" points="310.43,427.69,319.4861,423.8187,313.8331,424.0268,313.6249,418.3738,310.43,427.69" style="stroke:#800000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="142" x="351.5" y="394.0669">bed:hasLocation&#xa0;[1..*]</text></g><!--link bed:Borehole to bed:Core--><g id="link_bed:Borehole_bed:Core"><path codeLine="65" d="M540.5,351.21 C540.5,376.86 540.5,397.02 540.5,421.88 " fill="none" id="bed:Borehole-to-bed:Core" style="stroke:#800000;stroke-width:1.0;"/><polygon fill="#800000" points="540.5,427.88,544.5,418.88,540.5,422.88,536.5,418.88,540.5,427.88" style="stroke:#800000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="81" x="541.5" y="394.0669">bed:hasCore</text></g><!--link bed:Core to bed:Geology--><g id="link_bed:Core_bed:Geology"><path codeLine="137" d="M473.14,707.04 C460.81,732.38 450.6138,753.3541 438.4138,778.4441 " fill="none" id="bed:Core-to-bed:Geology" style="stroke:#800000;stroke-width:1.0;"/><polygon fill="#800000" points="435.79,783.84,443.3229,777.4953,437.9765,779.3434,436.1284,773.997,435.79,783.84" style="stroke:#800000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="103" x="457.5" y="750.0669">bed:hasGeology</text></g><!--link bed:Core to bed:CoreSample--><g id="link_bed:Core_bed:CoreSample"><path codeLine="138" d="M607.86,707.04 C625.66,743.65 641.8754,776.9945 658.3854,810.9345 " fill="none" id="bed:Core-to-bed:CoreSample" style="stroke:#800000;stroke-width:1.0;"/><polygon fill="#800000" points="661.01,816.33,660.6701,806.487,658.8228,811.8338,653.4761,809.9865,661.01,816.33" style="stroke:#800000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="130" x="630.5" y="750.0669">bed:hasCoreSample</text></g><!--link bed:TestBed to bed:Location--><g id="link_bed:TestBed_bed:Location"><path codeLine="149" d="M181.5,228.56 C181.5,278.33 181.5,352.07 181.5,421.6 " fill="none" id="bed:TestBed-to-bed:Location" style="stroke:#800000;stroke-width:1.0;"/><polygon fill="#800000" points="181.5,427.6,185.5,418.6,181.5,422.6,177.5,418.6,181.5,427.6" style="stroke:#800000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="115" x="182.5" y="394.0669">bed:location&#xa0;[1..*]</text></g><!--SRC=[dPbFJzmu5C3lV8fiUzjLqR3Q4rfLIu5I9A0h1hG7nC6JlCbOE7RMTg3JJz_dp2JZ97PiSvkyl9_jsE-lHu7EEAb0rII79TH44YranWM78_L2kH5KMSw8Kby5rqlw4xAJluv-As1DEMGtrrVV7hxVdzrTNThgegfn05JNMmPPKx4_hRTlajIte1GfuJzQw4rsibXOhy-a56_dWk4gFjuIAGG_Klv5PaVdPctPXnKKfr-4X8rWS2FA3zdJqyUHxFavEvhgdMP6n4HPKbvUK0cvfe9dAF-XYbEb9Ogp87ZV92CFGh09OttDZSY9MKh_APsW_uw3ncvWyfDM3MxeVj0r4qHdsTF9yV7lpvc7oOMG1UL4mtAhD5JZ5SNI3ziQqjY2wAQwPF3QIkzX3H9udZe8g5pIsdza4u3MIVk3-bwZc2U1ADsg9Sm6tNOaKQKK3Izku1LO4iVmIJS5Z22Fik1bl3ONKczIlrutd0Ex1GsouoZNyzfBZxzQZdG564tARUz7- -VUZVhtdKsRs3Dxr1D2mdMHXCpOxJn7LOvncFA6wgtRugU4RkIAE5pBgRyMZ1A_Fusqo_QHveITbP3q9GVoaLETXaf2UPkAOfR8gDuOGQUymhWBX0Vcg32zIS9Kr1HIv2-jmT4rpKdoeHey73z7a8OVUAumP_XTxfaamqacx0PTxPylAAPRomq7lZw6Sb44bZub9EmTzv8NaPFqo0tmSfBbWjHI4wcZe61EcG2ICcPz26OscDNTrKNnOvi20sfnM3_XsyVxwn0p-EIvHPNG6lk_ZQo5IZnBz6Cq5RaDwT422qBq3sDKyvgiFT-mGumvKoAc4Qg6tBYivyCzaCR2HQLDf8KcBC5kTSB7V_hqEVELcXkYBAaV7UTMv3hHtuz_B1PdYy_1wSzHPF7cSH2DZ619gjgAHmTH7v5ihKXtT22q0guG21pJb4HJteWYTfvQYXgaBn4xz6CSR8f9-By1BCxb3S40RNgVRUeGgdswW3hG7lZ8kwPQWNpNhAQjQcEF7OU2PBFQJUmA0xPLtGgi7eIHzrPr4FLMPMlj3xgNdEE2IcjBxK0vnyq6g87TypKj6pbivWPIo_e7kiEaV2Wnswful8KEie2QYItwWdPkunmOz3a7HJd6HiPQMVZ87GEmVSn9_r8y4VnAahXW2PLu9UnTQrKOOOGy3zO-Ct2CEthXwulKFTfno_dqPHdkijNlBNRts9jgzpR6qeQB6v9sNH1FLOGtQvAR2ZYDm_DYAS1kqwwmmwxJiSCPnJFBYFB2oJKhxNLo5v1wK0ea9IoG22pp-ROj96aOpKTsD9Bt1ZNHZrwiDUc5UEFxQgUqSy98taywqH-6tB1xUmR8qQYneiOUjR3l-JozfsyGSu-gg6vhj_48iwI9n5Gt_d3euR31z6SAFrD6vFW07NV7DZ_8i4UAswdf_QqZd7hOYfGSDCql86Vc4dHwRnU5N_DtuQRqDBNWdQFjcGMxgkpUEh6O2MtETMSp2-l0RVUkUx3wWa57SF1BhKKLLyRsNeJB9hISQHvwpGsHPL_gEjv7tFEDzHr_3Cm3ovnmZmdRgeNPWyXBym7dljdn0ypLjVhLGmsKLR2XUM134rQLq4R1gAvdodHzR3ohHPrcOMz0ouqUlkdRuj6r7NR6UubRVTeAxNlfdN3WCr_fIi9thDB7ANRyelUbAT7b2pG9AShsVxNPZVADa9QcJQuN5Q33SNC3xAWG9cy7TOA3VSyo7h2h_W95F_7-kP-gVzz5ac6dwDwX4MJ-DxaBtaoD8BN1HEQa5iV79pugV6lK0zwR7-QxzXaq1bHL4wCRIAqsOQ0RVKeRx0kodCgSmUxtBh2etGDKjTwYo4HgTTIsSP3zqt1CJozG_080]--></g></svg></div><small class="form-text text-muted">Click diagram to navigate to corresponding section | <a href="http://www.plantuml.com/plantuml/png/dPbFJzmu5C3lV8fiUzjLqR3Q4rfLIu5I9A0h1hG7nC6JlCbOE7RMTg3JJz_dp2JZ97PiSvkyl9_jsE-lHu7EEAb0rII79TH44YranWM78_L2kH5KMSw8Kby5rqlw4xAJluv-As1DEMGtrrVV7hxVdzrTNThgegfn05JNMmPPKx4_hRTlajIte1GfuJzQw4rsibXOhy-a56_dWk4gFjuIAGG_Klv5PaVdPctPXnKKfr-4X8rWS2FA3zdJqyUHxFavEvhgdMP6n4HPKbvUK0cvfe9dAF-XYbEb9Ogp87ZV92CFGh09OttDZSY9MKh_APsW_uw3ncvWyfDM3MxeVj0r4qHdsTF9yV7lpvc7oOMG1UL4mtAhD5JZ5SNI3ziQqjY2wAQwPF3QIkzX3H9udZe8g5pIsdza4u3MIVk3-bwZc2U1ADsg9Sm6tNOaKQKK3Izku1LO4iVmIJS5Z22Fik1bl3ONKczIlrutd0Ex1GsouoZNyzfBZxzQZdG564tARUz7--VUZVhtdKsRs3Dxr1D2mdMHXCpOxJn7LOvncFA6wgtRugU4RkIAE5pBgRyMZ1A_Fusqo_QHveITbP3q9GVoaLETXaf2UPkAOfR8gDuOGQUymhWBX0Vcg32zIS9Kr1HIv2-jmT4rpKdoeHey73z7a8OVUAumP_XTxfaamqacx0PTxPylAAPRomq7lZw6Sb44bZub9EmTzv8NaPFqo0tmSfBbWjHI4wcZe61EcG2ICcPz26OscDNTrKNnOvi20sfnM3_XsyVxwn0p-EIvHPNG6lk_ZQo5IZnBz6Cq5RaDwT422qBq3sDKyvgiFT-mGumvKoAc4Qg6tBYivyCzaCR2HQLDf8KcBC5kTSB7V_hqEVELcXkYBAaV7UTMv3hHtuz_B1PdYy_1wSzHPF7cSH2DZ619gjgAHmTH7v5ihKXtT22q0guG21pJb4HJteWYTfvQYXgaBn4xz6CSR8f9-By1BCxb3S40RNgVRUeGgdswW3hG7lZ8kwPQWNpNhAQjQcEF7OU2PBFQJUmA0xPLtGgi7eIHzrPr4FLMPMlj3xgNdEE2IcjBxK0vnyq6g87TypKj6pbivWPIo_e7kiEaV2Wnswful8KEie2QYItwWdPkunmOz3a7HJd6HiPQMVZ87GEmVSn9_r8y4VnAahXW2PLu9UnTQrKOOOGy3zO-Ct2CEthXwulKFTfno_dqPHdkijNlBNRts9jgzpR6qeQB6v9sNH1FLOGtQvAR2ZYDm_DYAS1kqwwmmwxJiSCPnJFBYFB2oJKhxNLo5v1wK0ea9IoG22pp-ROj96aOpKTsD9Bt1ZNHZrwiDUc5UEFxQgUqSy98taywqH-6tB1xUmR8qQYneiOUjR3l-JozfsyGSu-gg6vhj_48iwI9n5Gt_d3euR31z6SAFrD6vFW07NV7DZ_8i4UAswdf_QqZd7hOYfGSDCql86Vc4dHwRnU5N_DtuQRqDBNWdQFjcGMxgkpUEh6O2MtETMSp2-l0RVUkUx3wWa57SF1BhKKLLyRsNeJB9hISQHvwpGsHPL_gEjv7tFEDzHr_3Cm3ovnmZmdRgeNPWyXBym7dljdn0ypLjVhLGmsKLR2XUM134rQLq4R1gAvdodHzR3ohHPrcOMz0ouqUlkdRuj6r7NR6UubRVTeAxNlfdN3WCr_fIi9thDB7ANRyelUbAT7b2pG9AShsVxNPZVADa9QcJQuN5Q33SNC3xAWG9cy7TOA3VSyo7h2h_W95F_7-kP-gVzz5ac6dwDwX4MJ-DxaBtaoD8BN1HEQa5iV79pugV6lK0zwR7-QxzXaq1bHL4wCRIAqsOQ0RVKeRx0kodCgSmUxtBh2etGDKjTwYo4HgTTIsSP3zqt1CJozG_080" target="_blank">View as PNG</a></small>
+                  <!--@startuml
+set namespaceSeparator none
+skinparam classFontSize 14
+!define LIGHTORANGE
+skinparam componentStyle uml2
+skinparam wrapMessageWidth 100
+skinparam ArrowColor #Maroon
+set namespaceSeparator none 
+Class "bed:BoreholeLog" [[#bed:BoreholeLog]] 
+"bed:BoreholeLog" : bed:loggingDirection  : xsd:string  
+"bed:BoreholeLog" : bed:loggingRun  : xsd:string  
+"bed:BoreholeLog" : bed:loggingTool  : xsd:string  
+Class "bed:Location" [[#bed:Location]] 
+"bed:Location" : bed:azimuth  : xsd:float  [1..*]  
+"bed:Location" : bed:coordinateSystem  : xsd:string  [1..*]  
+"bed:Location" : bed:coordinateType  : xsd:string  [1..*]  
+"bed:Location" : bed:datumElevationReference  : xsd:string  [1..*]  
+"bed:Location" : bed:description  : xsd:string  
+"bed:Location" : bed:dip  : xsd:float  [1..*]  
+"bed:Location" : bed:dipDirection  : xsd:string  [1..*]  
+"bed:Location" : bed:easting  : xsd:float  [1..*]  
+"bed:Location" : bed:elevation  : xsd:float  [1..*]  
+"bed:Location" : bed:groundLevel  : xsd:float  [1..*]  
+"bed:Location" : bed:latitude  : xsd:float  
+"bed:Location" : bed:longitude  : xsd:float  
+"bed:Location" : bed:northing  : xsd:float  [1..*]  
+"bed:Location" : bed:tunnelMeter  : xsd:int  
+"bed:Location" : bed:tunnelSection  : xsd:string  
+Class "bed:Geology" [[#bed:Geology]] 
+"bed:Geology" : bed:color  : xsd:string  [1..*]  
+"bed:Geology" : bed:coreId  : xsd:string  [1..*]  
+"bed:Geology" : bed:description  : xsd:string  [1..*]  
+"bed:Geology" : bed:discontinuity  : xsd:string  
+"bed:Geology" : bed:disturbance  : xsd:string  
+"bed:Geology" : bed:foliation  : xsd:string  
+"bed:Geology" : bed:geologicalAge  : xsd:string  [1..*]  
+"bed:Geology" : bed:geologicalUnit  : xsd:string  [1..*]  
+"bed:Geology" : bed:grainSize  : xsd:string  
+"bed:Geology" : bed:litholog  : xsd:boolean  [1..*]  
+"bed:Geology" : bed:minerals  : xsd:string  
+"bed:Geology" : bed:rockClassification  : xsd:string  [1..*]  
+"bed:Geology" : bed:rockType  : xsd:string  [1..*]  
+"bed:Geology" : bed:texture  : xsd:string  
+Class "bed:Borehole" [[#bed:Borehole]] 
+"bed:Borehole" : bed:boreholeDiameter  : xsd:float  
+"bed:Borehole" : bed:code  : xsd:string  [1..*]  
+"bed:Borehole" : bed:coreSectionEnd  : xsd:float  
+"bed:Borehole" : bed:coreSectionLength  : xsd:float  
+"bed:Borehole" : bed:coreSectionStart  : xsd:float  
+"bed:Borehole" : bed:description  : xsd:string  
+"bed:Borehole" : bed:drillEnd  : xsd:date  
+"bed:Borehole" : bed:drillStyle  : xsd:string  
+"bed:Borehole" : bed:drillingReport  : xsd:anyURI  
+"bed:Borehole" : bed:drillingStart  : xsd:date  
+"bed:Borehole" : bed:generalPurpose  : xsd:string  [1..*]  
+"bed:Borehole" : bed:geometry  [1..*]  
+"bed:Borehole" : bed:identifier  [1..*]  
+"bed:Borehole" : bed:lengthType  : xsd:string  [1..*]  
+"bed:Borehole" : bed:name  : xsd:string  [1..*]  
+"bed:Borehole" : bed:specificPurpose  : xsd:string  
+"bed:Borehole" : bed:status  : xsd:string  [1..*]  
+"bed:Borehole" : bed:totalLength  : xsd:float  
+"bed:Borehole" : bed:type  : xsd:string  [1..*]  
+"bed:Borehole" - -> "bed:BoreholeLog" : bed:hasBoreholeLog 
+"bed:Borehole" - -> "bed:Location" : bed:hasLocation<U+00A0>[1..*]  
+"bed:Borehole" - -> "bed:Core" : bed:hasCore 
+Class "bed:CoreSample" [[#bed:CoreSample]] 
+"bed:CoreSample" : bed:description  : xsd:string  
+"bed:CoreSample" : bed:dimensions  : xsd:string  [1..*]  
+"bed:CoreSample" : bed:method  : xsd:string  
+"bed:CoreSample" : bed:property  : xsd:string  
+"bed:CoreSample" : bed:purpose  : xsd:string  [1..*]  
+"bed:CoreSample" : bed:requesterLaboratory  : xsd:string  [1..*]  
+"bed:CoreSample" : bed:sampleDepth  : xsd:float  [1..*]  
+"bed:CoreSample" : bed:sampleNumber  : xsd:string  [1..*]  
+"bed:CoreSample" : bed:samplingDate  : xsd:date  [1..*]  
+"bed:CoreSample" : bed:subsampleType  : xsd:string  
+Class "bed:Monitoring" [[#bed:Monitoring]] 
+"bed:Monitoring" : bed:monitoringCategory  : xsd:date  
+"bed:Monitoring" : bed:monitoringType  : xsd:string  [1..*]  
+Class "bed:Configuration" [[#bed:Configuration]] 
+"bed:Configuration" : bed:boreholeId  : xsd:int  [1..*]  
+"bed:Configuration" : bed:deploymentType  : xsd:string  
+"bed:Configuration" : bed:description  : xsd:string  
+"bed:Configuration" : bed:installationDate  : xsd:date  [1..*]  
+"bed:Configuration" : bed:locationId  : xsd:int  [1..*]  
+"bed:Configuration" : bed:orientation  : xsd:string  
+"bed:Configuration" : bed:removalDate  : xsd:date  [1..*]  
+"bed:Configuration" : bed:sensorCode  : xsd:string  [1..*]  
+"bed:Configuration" : bed:sensorDepth  : xsd:float  [1..*]  
+"bed:Configuration" : bed:sensorID  : xsd:int  [1..*]  
+"bed:Configuration" : bed:sensorStatus  : xsd:string  [1..*]  
+Class "bed:Sensor" [[#bed:Sensor]] 
+"bed:Sensor" : bed:deploymentType  : xsd:string  [1..*]  
+"bed:Sensor" : bed:identifier  : xsd:string  [1..*]  
+"bed:Sensor" : bed:manufacturer  : xsd:string  [1..*]  
+"bed:Sensor" : bed:model  : xsd:string  [1..*]  
+"bed:Sensor" : bed:sensorGroup  : xsd:string  [1..*]  
+"bed:Sensor" : bed:sensorID  : xsd:string  [1..*]  
+"bed:Sensor" : bed:sensorStatus  : xsd:string  [1..*]  
+"bed:Sensor" : bed:sensorSubtype  : xsd:string  
+"bed:Sensor" : bed:sensorType  : xsd:string  [1..*]  
+"bed:Sensor" : bed:serialNumber  : xsd:string  [1..*]  
+Class "bed:HydraulicSensor" [[#bed:HydraulicSensor]] 
+"bed:HydraulicSensor" : bed:sensorType  : xsd:string  [1..*]  
+Class "bed:DownholeLogging" [[#bed:DownholeLogging]] 
+"bed:DownholeLogging" : bed:boreholeCode  : xsd:string  [1..*]  
+"bed:DownholeLogging" : bed:centralizedTool  : xsd:boolean  [1..*]  
+"bed:DownholeLogging" : bed:compositeLog  : xsd:boolean  
+"bed:DownholeLogging" : bed:institution  : xsd:string  
+"bed:DownholeLogging" : bed:logType  : xsd:string  
+"bed:DownholeLogging" : bed:loggingDate  : xsd:date  [1..*]  
+"bed:DownholeLogging" : bed:loggingDirection  : xsd:string  [1..*]  
+"bed:DownholeLogging" : bed:loggingReport  : xsd:boolean  
+"bed:DownholeLogging" : bed:loggingRun  : xsd:int  [1..*]  
+"bed:DownholeLogging" : bed:magneticDeclination  : xsd:float  
+"bed:DownholeLogging" : bed:magneticInclination  : xsd:float  
+"bed:DownholeLogging" : bed:operatorName  : xsd:string  
+"bed:DownholeLogging" : bed:samplingRate  : xsd:float  
+"bed:DownholeLogging" : bed:samplingRateUnit  : xsd:string  
+"bed:DownholeLogging" : bed:tool  : xsd:string  
+Class "bed:Core" [[#bed:Core]] 
+"bed:Core" : bed:bottomDepth  : xsd:float  [1..*]  
+"bed:Core" : bed:campaign  : xsd:string  
+"bed:Core" : bed:chargeNumber  
+"bed:Core" : bed:coreId  : xsd:string  [1..*]  
+"bed:Core" : bed:coreRun  : xsd:string  [1..*]  
+"bed:Core" : bed:coreScan  : xsd:boolean  
+"bed:Core" : bed:depthReference  : xsd:string  [1..*]  
+"bed:Core" : bed:diameter  : xsd:float  [1..*]  
+"bed:Core" : bed:length  : xsd:float  [1..*]  
+"bed:Core" : bed:method  : xsd:string  
+"bed:Core" : bed:originLab  : xsd:string  
+"bed:Core" : bed:repository  : xsd:string  [1..*]  
+"bed:Core" : bed:repositoryLocation  : xsd:string  [1..*]  
+"bed:Core" : bed:topDepth  : xsd:float  [1..*]  
+"bed:Core" : bed:weight  
+"bed:Core" - -> "bed:Geology" : bed:hasGeology 
+"bed:Core" - -> "bed:CoreSample" : bed:hasCoreSample 
+Class "bed:FibreOpticSensor" [[#bed:FibreOpticSensor]] 
+"bed:FibreOpticSensor" : bed:interrogator  : xsd:string  [1..*]  
+"bed:FibreOpticSensor" : bed:sensorType  : xsd:string  [1..*]  
+Class "bed:HydromechanicalSensor" [[#bed:HydromechanicalSensor]] 
+"bed:HydromechanicalSensor" : bed:sensorType  : xsd:string  [1..*]  
+Class "bed:TestBed" [[#bed:TestBed]] 
+"bed:TestBed" : bed:category  : xsd:string  [1..*]  
+"bed:TestBed" : bed:longName  : xsd:string  [1..*]  
+"bed:TestBed" : bed:shortName  : xsd:string  [0..1]  
+"bed:TestBed" : bed:type  : xsd:string  [1..*]  
+"bed:TestBed" - -> "bed:Location" : bed:location<U+00A0>[1..*]  
+Class "bed:SeismicSensor" [[#bed:SeismicSensor]] 
+"bed:SeismicSensor" : bed:sensorType  : xsd:string  [1..*]  
+hide circle
+hide methods
+hide empty members
+remove @unlinked
+@enduml
+--></section>
+            </div>
+         </div>
+         <div>
             <h2 id="description" class="sp_section_subtitle" style="margin-top: 1em;">Description</h2><p>This ontology provides classes and properties for representing boreholes, borehole logs, core samples, sensors, and related metadata for geoscientific research. It is designed to support data integration, sharing, and documentation for the Bedretto project.</p>
 </div>
          <h2 id="documentation" class="sp_section_subtitle">Model documentation</h2>
