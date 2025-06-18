@@ -378,7 +378,7 @@ bed:dip a rdf:Property ;
   .
 bed:azimuth a rdf:Property ;
   skos:prefLabel "azimuth " ;
-  skos:definition ""
+  skos:definition "An angle indicating the orientation of something, with respect to the horizontal"
   .
 bed:drillStyle a rdf:Property ;
   skos:prefLabel "Drill style" ;
