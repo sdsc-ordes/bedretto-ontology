@@ -93,5 +93,5 @@ Once merged, the updated docs are available at:
 
 👥 Contributors
 
-[Liliana Vargas](https://github.com/anailil)
-[Robin Franken](https://github.com/rmfranken/) (With contributions and stewardship by the Bedretto Lab, ETH Zurich)
+- [Liliana Vargas](https://github.com/anailil)
+- [Robin Franken](https://github.com/rmfranken/) (With contributions and stewardship by the Bedretto Lab, ETH Zurich)
