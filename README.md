@@ -1,6 +1,6 @@
 # 🛠️ Bedretto Ontology
 
-The **Bedretto Ontology** provides structured semantic definitions for boreholes, core samples, sensors, monitoring systems, and geological metadata, as used at the Bedretto Underground Laboratory for Geosciences and Geoenergies.
+The **Bedretto Ontology** provides structured semantic definitions for boreholes, core samples, sensors, monitoring systems, and geological metadata, as used at the [Bedretto Underground Laboratory for Geosciences and Geoenergies](https://bedrettolab.ethz.ch), which are also applicable to other underground facilites.
 
 📄 **Documentation:** [https://sdsc-ordes.github.io/bedretto-ontology/](https://sdsc-ordes.github.io/bedretto-ontology/)
 
@@ -8,17 +8,17 @@ The **Bedretto Ontology** provides structured semantic definitions for boreholes
 
 ## 🧠 Overview
 
-This ontology models geoscientific infrastructure and observations. It supports data integration, documentation, and interoperability for subsurface research, particularly in the context of experimental test beds and instrumentation-rich boreholes.
+This ontology models geoscientific infrastructure and observations. It supports data integration, documentation, and interoperability for subsurface research, particularly in the context of experimental test beds and monitoring boreholes.
 
 **Key concepts include:**
 
 - **Boreholes**: Physical shafts drilled into the ground.
 - **Core & Core Samples**: Extracted geological materials and their descriptions.
-- **Borehole Logs & Downhole Logging**: Recorded physical and geological data from within boreholes.
+- **Downhole Logging**: Recorded physical and geological data from within boreholes.
 - **Sensors**: Including seismic, hydraulic, hydromechanical, and fibre-optic types.
 - **Monitoring & Configuration**: Observation setups and sensor parameterization.
 - **Geology**: Descriptive metadata for geological structures.
-- **Test Beds & Locations**: Experimental sites and their spatial context.
+- **Test Beds**: Experimental sites and their purpose.
 
 The ontology is modular and extendable, with a focus on real-world operational workflows and sensor installations.
 
