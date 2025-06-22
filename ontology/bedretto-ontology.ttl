@@ -107,15 +107,15 @@ bed:Location a rdfs:Class, sh:NodeShape ;
     sh:property [sh:path bed:elevation ; sh:datatype xsd:float ; sh:minCount 1 ; sh:maxCount 1 ; ] ;
     sh:property [sh:path bed:datumElevationReference ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ; ] ;
     sh:property [sh:path bed:groundLevel ; sh:datatype xsd:float ; sh:minCount 1 ; sh:maxCount 1 ; ] ;
-    sh:property [sh:path bed:coordinateSystem ; sh:datatype xsd:string ; sh:minCount ; 1 sh:maxCount 1 ; sh:in ("UTM (Universal Transverse Mercator)" "Geographic Coordinates (Latitude & Longitude)") ] ;
+    sh:property [sh:path bed:coordinateSystem ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("UTM (Universal Transverse Mercator)" "Geographic Coordinates (Latitude & Longitude)") ; ] ;
     sh:property [sh:path bed:dip ; sh:datatype xsd:float ; sh:minCount 1 ; sh:maxCount 1 ; ] ;
-    sh:property [sh:path bed:dipDirection ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("upward" "downward") ] ;
+    sh:property [sh:path bed:dipDirection ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("upward" "downward") ; ] ;
     sh:property [sh:path bed:azimuth ; sh:datatype xsd:float ; sh:minCount 1 ; sh:maxCount 1 ; ] ;
     sh:property [sh:path bed:longitude; sh:datatype xsd:float ; sh:minCount 0 ; sh:maxCount 1 ; ] ;
     sh:property [sh:path bed:latitude; sh:datatype xsd:float ; sh:minCount 0 ; sh:maxCount 1 ; ] ;
     sh:property [sh:path bed:description; sh:datatype xsd:string ; ] ;
     sh:property [sh:path bed:tunnelMeter; sh:datatype xsd:int ; sh:minCount 1 ; sh:maxCount 1 ; ] ;
-    sh:property [sh:path bed:tunnelSection ; sh:datatype xsd:string ; sh:minCount 0 ; sh:maxCount 1 ; sh:in ("Main Tunnel" "FEAR tunnel")] ;
+    sh:property [sh:path bed:tunnelSection ; sh:datatype xsd:string ; sh:minCount 0 ; sh:maxCount 1 ; sh:in ("Main Tunnel" "FEAR tunnel") ; ] ;
   .
 
 bed:Core a rdfs:Class, sh:NodeShape ;
