@@ -179,10 +179,6 @@ bed:Monitoring a rdfs:Class, sh:NodeShape ;
   skos:definition "Monitoring refers to the process of systematically observing and recording data over time to assess changes or trends in a specific environment or system." ;
   sh:property [sh:path bed:monitoringType ; sh:datatype xsd:string ; sh:minCount 1 ; sh:in ("experimental seismic network" "background seismic network" "distributed fibre optic sensing") ] ;
   sh:property [sh:path bed:monitoringCategory ; sh:datatype xsd:date ; sh:in ("downhole monitoring" "surface monitoring" "tunnel monitoring") ] ;
-  sh:property [sh:path bed:hasHydraulicSensor ; sh:class bed:HydraulicSensor ; ] ;
-  sh:property [sh:path bed:hasHydromechanicalSensor ; sh:class bed:HydromechanicalSensor ; ] ;
-  sh:property [sh:path bed:hasSeismicSensor ; sh:class bed:SeismicSensor ; ] ;
-  sh:property [sh:path bed:hasFibreOpticSensor ; sh:class bed:FibreOpticSensor ; ] ;
   .
 
 bed:DownholeLogging a rdfs:Class, sh:NodeShape ;
