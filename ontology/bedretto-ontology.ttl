@@ -411,6 +411,11 @@ bed:loggingTool a rdf:Property ;
   skos:example "Gamma Ray, Caliper, Acoustic Televiewer, Optical Televiewer; etc" ;
   .
 
+bed:hasDownholeLogging a rdf:Property ;
+  skos:prefLabel "Has Downhole Logging" ;
+  skos:definition "Indicates that a borehole has downhole logging data associated with it." ;
+  .
+  
 bed:loggingDirection a rdf:Property ;
   skos:prefLabel "Logging Direction" ;
   skos:definition "Instruments lowered into boreholes can measure on their way down into the borehole or up out of the borehole." ;
