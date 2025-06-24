@@ -32,8 +32,8 @@ bed: a owl:Ontology ;
 
 bed:TestBed a rdfs:Class, sh:NodeShape ;
   skos:prefLabel "Test Bed" ;
-  skos:definition "A test bed is a controlled environment where experiments and tests are conducted to evaluate the performance of systems or components." ;
-    sh:property [sh:path bed:longName ; sh:datatype xsd:string ; sh:minCount 1 ; sh:maxCount 1 ; sh:in (
+  skos:definition "A testbed is a platform for testing, experimentation, and validation, which consists of infrastructure that includes hardware, software, and other resources." ;
+    sh:property [sh:path bed:longName ; sh:datatype xsd:string ; sh:minCount 1 ; sh:in (
         "Bedretto Underground Laboratory for Geosciences and Geoenergies (BULGG)"
         "Grimsel Test Site"
         "Mont Terri rock laboratory"
@@ -48,7 +48,7 @@ bed:TestBed a rdfs:Class, sh:NodeShape ;
         "UK GeoEnergy Research Centre (GERC)"
         "Rijswijk Centre for Sustainable Geo-energy (RCSG)"
         "ECCSEL Svelvik CO2 Field Lab"
-        "BRGM’s Geothermal Testing Facility"
+        "BRGM's Geothermal Testing Facility"
         "Sotacarbo Fault Laboratory"
         "Underground research laboratory Andra"
         "CATenoy experimental site (CATLAB)"
@@ -56,7 +56,7 @@ bed:TestBed a rdfs:Class, sh:NodeShape ;
         "Krafla Magma Testbed"
     )] ; 
     sh:property [sh:path bed:shortName ; sh:datatype xsd:string ; sh:minCount 0 ; sh:maxCount 1 ; ] ; 
-    sh:property [sh:path bed:type ; sh:datatype xsd:string ; sh:minCount 1 ; sh:in (
+    sh:property [sh:path bed:testbedType ; sh:datatype xsd:string ; sh:minCount 1 ; sh:in (
         "underground research laboratory"
         "test site"
         "field-scale laboratory"
@@ -78,8 +78,8 @@ bed:Borehole a rdfs:Class, sh:NodeShape ;
   sh:property [sh:path bed:code ; sh:minCount 1 ; sh:datatype xsd:string ; ] ;
   sh:property [sh:path bed:name ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; ] ;
   sh:property [sh:path bed:generalPurpose ; sh:minCount 1 ; sh:datatype xsd:string ; sh:in ("site investigation" "decontamination" "disposal" "geotechnical" "mineral" "monitoring" "oil" "groundwater" "geothermal") ] ;
-  sh:property [sh:path bed:specificPurpose; sh:minCount 0 ; sh:datatype xsd:string ; ] ;
-  sh:property [sh:path bed:type ; sh:minCount 1 ; sh:datatype xsd:string ; sh:in ("extraction" "producer" "stimulation" "injector" "monitoring") ] ;
+  sh:property [sh:path bed:specificPurpose; sh:datatype xsd:string ; ] ;
+  sh:property [sh:path bed:boreholeType ; sh:minCount 1 ; sh:datatype xsd:string ; sh:in ("extraction" "producer" "estimulation" "injector" "monitoring") ] ;
   sh:property [sh:path bed:status ; sh:minCount 1 ; sh:datatype xsd:string ; sh:in ("in use" "decommissioned" "collapsed" "abandoned") ] ;
   sh:property [sh:path bed:totalLength ; sh:datatype xsd:float ; ] ;
   sh:property [sh:path bed:lengthType; sh:minCount 1 ; sh:datatype xsd:string ; sh:in ("loggers measurement" "drillers measurement" "survey" "total vertical depth (TVD)" "measured depth (MD)") ] ;
@@ -328,11 +328,18 @@ bed:generalPurpose a rdf:Property ;
   skos:definition "Purposes for which a borehole was drilled" ;
   skos:example "site investigation, decontamination, disposal, Geotechnical, Mineral, MonitoringlevelHead, MonitoringQuality, Oil, OilExploratory, Seismic, WaterExploratory, etc." ;
   .
-bed:type a rdf:Property ;
+bed:boreholeType a rdf:Property ;
   skos:prefLabel "Type" ;
   skos:definition "Specific purpose of the borehole" ;
   skos:example "extraction, production, injection, estimulation, observation, monitoring" ;
   .
+
+bed:testbedType a rdf:Property ;
+  skos:prefLabel "Testbed Type" ;
+  skos:definition "Type of testbed" ;
+  skos:example "underground research laboratory, test site, field-scale laboratory, field-scale observatory" ;
+  .
+
 bed:status a rdf:Property ;
   skos:prefLabel "Status" ;
   skos:definition "Current status of the borehole" ;
