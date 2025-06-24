@@ -38,7 +38,7 @@ The ontology is modular and extendable, with a focus on real-world operational w
 │ ├── BoreholeIE_consolidated_vocab_ed.xlsx
 │ └── Borehole_consolidated_vocab_02.xlsx
 │ └── BoreholeDB_v0.1_relationships.PNG
-├── ontology/ # Core ontology (Turtle format)
+├── src/ontology/ # Core ontology (Turtle format)
 │ └── bedretto-ontology.ttl
 │ └── README.md # Ontology editing docs
 ├── src/quality-checks/ # SHACL shapes for validation
@@ -61,7 +61,7 @@ All changes to the ontology file or shapes will trigger these checks automatical
 
 ## ✍️ How to Contribute
 
-Want to propose changes or additions to the ontology? Check out the [README.md](https://github.com/sdsc-ordes/bedretto-ontology/ontology/README.md) inside /ontology.
+Want to propose changes or additions to the ontology? Check out the [README.md](https://github.com/sdsc-ordes/bedretto-ontology/src/ontology/README.md) inside src/ontology.
 After comitting and pushing changes:
 
 CI Will Run Automatically
