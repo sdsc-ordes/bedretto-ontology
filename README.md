@@ -33,19 +33,20 @@ The ontology is modular and extendable, with a focus on real-world operational w
 ├── README.md # You're reading it
 ├── docs/ # Rendered documentation & diagrams
 │ ├── index.html
-│ └── BoreholeDB_v0.1_relationships.PNG
 ├── external/ # Source vocabularies and domain references
 │ ├── BoreholeDB_v0.1.accdb
 │ ├── BoreholeIE_consolidated_vocab_ed.xlsx
 │ └── Borehole_consolidated_vocab_02.xlsx
+│ └── BoreholeDB_v0.1_relationships.PNG
 ├── ontology/ # Core ontology (Turtle format)
 │ └── bedretto-ontology.ttl
+│ └── README.md # Ontology editing docs
 ├── src/quality-checks/ # SHACL shapes for validation
 │ └── shacl-shacl.ttl
 └── tools/python/ # Python tools for SHACL and SPARQL
-├── checks/shacl.py
-├── docs/sparql.py
-└── requirements.txt
+│ └──checks/shacl.py
+│ └──docs/sparql.py
+│ └──requirements.txt
 ```
 ## 🧪 Continuous Integration
 
@@ -60,31 +61,9 @@ All changes to the ontology file or shapes will trigger these checks automatical
 
 ## ✍️ How to Contribute
 
-Want to propose changes or additions to the ontology? Here's how:
+Want to propose changes or additions to the ontology? Check out the [README.md](https://github.com/sdsc-ordes/bedretto-ontology/ontology/README.md) inside /ontology.
+After comitting and pushing changes:
 
-1. **Edit the Ontology**
-
-   Open and modify:  
-   `ontology/bedretto-ontology.ttl`
-
-2. **(Optional) Add or Update SHACL Shapes**
-
-   For quality checks or structure enforcement, modify:  
-   `src/quality-checks/shacl-shacl.ttl`
-
-3. **Run Local Validation (optional)**
-
-   To validate your changes before committing:
-   ```bash
-   pip install -r tools/python/requirements.txt
-   python tools/python/checks/shacl.py
-Commit Your Changes
-
-```bash
-git add ontology/bedretto-ontology.ttl
-git commit -m "Describe your ontology update"
-git push
-```
 CI Will Run Automatically
 
 GitHub will validate the ontology and regenerate the documentation.
