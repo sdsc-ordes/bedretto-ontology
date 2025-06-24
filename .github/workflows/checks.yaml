@@ -4,10 +4,10 @@ on:
   workflow_call:
   push:
     paths:
-      - 'ontology/**'
+      - 'src/ontology/**'
   pull_request:
     paths:
-      - 'ontology/**'
+      - 'src/ontology/**'
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -28,4 +28,4 @@ jobs:
 
       - name: SHACL validation
         run: |
-          python tools/python/checks/shacl.py ontology/bedretto-ontology.ttl src/quality-checks/shacl-shacl.ttl
+          python tools/python/checks/shacl.py src/ontology/bedretto-ontology.ttl src/quality-checks/shacl-shacl.ttl

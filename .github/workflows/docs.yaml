@@ -3,10 +3,10 @@ name: SHACL Documentation Generation
 on:
   push:
     paths:
-      - 'ontology/**'
+      - 'src/ontology/**'
   pull_request:
     paths:
-      - 'ontology/**'
+      - 'src/ontology/**'
 
 jobs:
   generate-docs:

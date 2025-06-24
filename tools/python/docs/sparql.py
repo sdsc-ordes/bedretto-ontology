@@ -7,7 +7,7 @@ SH = Namespace("http://www.w3.org/ns/shacl#")
 
 # Load the input ontology
 g = Graph()
-g.parse("ontology/bedretto-ontology.ttl", format="turtle")
+g.parse("src/ontology/bedretto-ontology.ttl", format="turtle")
 
 to_replace = []
 for s, p, o in g.triples((None, SH.node, None)):

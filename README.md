@@ -38,7 +38,7 @@ The ontology is modular and extendable, with a focus on real-world operational w
 │ ├── BoreholeIE_consolidated_vocab_ed.xlsx
 │ └── Borehole_consolidated_vocab_02.xlsx
 │ └── BoreholeDB_v0.1_relationships.PNG
-├── ontology/ # Core ontology (Turtle format)
+├── src/ontology/ # Core ontology (Turtle format)
 │ └── bedretto-ontology.ttl
 │ └── README.md # Ontology editing docs
 ├── src/quality-checks/ # SHACL shapes for validation
