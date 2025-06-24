@@ -61,7 +61,7 @@ All changes to the ontology file or shapes will trigger these checks automatical
 
 ## ✍️ How to Contribute
 
-Want to propose changes or additions to the ontology? Check out the [README.md](https://github.com/sdsc-ordes/bedretto-ontology/src/ontology/README.md) inside src/ontology.
+Want to propose changes or additions to the ontology? Check out the [README.md](https://github.com/sdsc-ordes/bedretto-ontology/blob/main/ontology/README.md) inside /ontology.
 After comitting and pushing changes:
 
 CI Will Run Automatically
