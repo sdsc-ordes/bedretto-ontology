@@ -378,6 +378,7 @@ bed:hasSensor a rdf:Property ;
 bed:hasConfiguration a rdf:Property ;
   skos:prefLabel "Has configuration" ;
   skos:definition "a property to link a borehole to a configuration" ;
+  .
 
 bed:hasMonitoring a rdf:Property ;
   skos:prefLabel "Has monitoring" ;
