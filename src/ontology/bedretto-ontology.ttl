@@ -17,7 +17,7 @@ bed: a owl:Ontology ;
   dcterms:abstract "An ontology for describing boreholes, core samples, sensors, and related geological data at the Bedretto Underground Laboratory for Geosciences and Geoenergies." ;
   dcterms:description "This ontology provides classes and properties for representing boreholes, borehole logs, core samples, sensors, and related metadata for geoscientific research. It is designed to support data integration, sharing, and documentation for the Bedretto project." ;
   adms:versionNotes "Initial version. Please update with release notes as needed." ;
-  dcterms:modified "2025-06-18"^^xsd:date ;
+  dcterms:modified "2025-07-09"^^xsd:date ;
   dcterms:created "2025-05-01"^^xsd:date ;
   dcterms:creator "Bedretto Lab" ;
   dcterms:issued "2025-06-01"^^xsd:date ;
@@ -25,7 +25,7 @@ bed: a owl:Ontology ;
   dcterms:publisher "ETH Zurich" ;
   dcterms:rightsHolder "ETH Zurich" ;
   owl:versionInfo "0.0.2" ;
-  doap:repository <https://github.com/bedretto/bedretto-ontology> ;
+  doap:repository <https://github.com/sdsc-ordes/bedretto-ontology> ;
   rdfs:label "Bedretto Ontology" ;
   rdfs:comment "Ontology for boreholes, core samples, sensors, and related geoscientific data at Bedretto Lab." ;
 .
